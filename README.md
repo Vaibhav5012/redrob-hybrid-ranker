@@ -1,3 +1,15 @@
+---
+title: Redrob AI Recruiter
+emoji: 🎯
+colorFrom: indigo
+colorTo: purple
+sdk: streamlit
+sdk_version: "1.45.0"
+app_file: app.py
+pinned: false
+license: apache-2.0
+---
+
 # Redrob AI Recruiter v2
 
 Two-stage hybrid ranker for the **Redrob Intelligent Candidate Discovery & Ranking Challenge**. Ranks ~100K profiles against a Senior AI Engineer JD using a recall → rerank pipeline with behavioral scoring — not keyword stuffing.
