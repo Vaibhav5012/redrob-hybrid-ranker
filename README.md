@@ -13,6 +13,7 @@ license: apache-2.0
 # Redrob AI Recruiter v2
 
 Two-stage hybrid ranker for the **Redrob Intelligent Candidate Discovery & Ranking Challenge**. Ranks ~100K profiles against a Senior AI Engineer JD using a recall → rerank pipeline with behavioral scoring — not keyword stuffing.
+Live Demo: https://huggingface.co/spaces/Vinline/redrob-hybrid-ranker
 
 ## Architecture
 
