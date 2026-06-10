@@ -142,10 +142,18 @@ if run_btn:
     if use_sample and sample_path.exists():
         candidates = json.loads(sample_path.read_text(encoding="utf-8"))
     elif uploaded:
-        raw = uploaded.read().decode("utf-8")
         if uploaded.name.endswith(".jsonl"):
-            candidates = [json.loads(line) for line in raw.splitlines() if line.strip()]
+            # Stream line by line to prevent OOM on 487MB files
+            import io
+            text_stream = io.TextIOWrapper(uploaded, encoding="utf-8")
+            for i, line in enumerate(text_stream):
+                if not line.strip():
+                    continue
+                candidates.append(json.loads(line))
+                if i >= 499:
+                    break
         else:
+            raw = uploaded.read().decode("utf-8")
             candidates = json.loads(raw)
     else:
         st.error("Upload a file or enable the sample dataset.")
