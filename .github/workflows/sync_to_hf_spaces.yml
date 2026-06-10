@@ -15,4 +15,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://NAME:$HF_TOKEN@huggingface.co/spaces/USERNAME/SPACE_NAME main
+        run: git push --force https://Vinline:$HF_TOKEN@huggingface.co/spaces/Vinline/redrob-hybrid-ranker
