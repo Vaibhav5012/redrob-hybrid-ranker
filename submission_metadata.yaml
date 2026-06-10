@@ -1,14 +1,14 @@
-team_name: "redrob-ai-recruiter"
+team_name: "Vinline"
 
 primary_contact:
-  name: "Team Lead"
-  email: "team@example.com"
-  phone: "+91-0000000000"
+  name: "B Chiru Vaibhav"
+  email: "bvaibhav1204@gmail.com"
+  phone: "+91-7903486010"
 
 team_members:
-  - name: "Team Lead"
-    email: "team@example.com"
-    role: "ML Engineer"
+  -name: "B Chiru Vaibhav"
+  email: "bvaibhav1204@gmail.com"
+  phone: "+91-7903486010"
 
 github_repo: "https://github.com/Vaibhav5012/redrob-hybrid-ranker"
 sandbox_link: "https://huggingface.co/spaces/Vinline/redrob-hybrid-ranker/"
